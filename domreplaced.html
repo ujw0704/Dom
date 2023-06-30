@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="list">
+        <ul id ="veg">
+            <li>Onion</li>
+            <li>Patato</li>
+            <li>Tamato</li>
+            <li>Ginger</li>
+
+
+        </ul>
+
+    </div>
+</body>
+<script>
+    // its is used to replaced old to new
+    // eg tomato to garlic
+    let neww =document.createElement("li");
+    var change = document.createTextNode("garlic")
+    neww.appendChild(change);
+    // console.log(elemet)
+    let tar= document.getElementById("veg");
+    var old =tar.children[2];
+    tar.replaceChild(neww,old);
+    console.log(neww);
+
+    let new1 =document.createElement("li");
+    var change = document.createTextNode("garlic")
+    neww.appendChild(change);
+    // console.log(elemet)
+    let tar1= document.getElementById("veg");
+    var old =tar.children[2];
+    tar.remove(old);
+    // console.log(neww);
+
+
+
+    
+  
+</script>
+</html>

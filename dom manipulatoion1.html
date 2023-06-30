@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            width: 100px;
+            padding: 100px;
+            background-color: aquamarine;
+            margin: 30px auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="first">
+        <li>Tamato</li>
+        <li>Patato</li>
+        <li>Onion</li>
+        <li>lemon</li>
+    </ul>
+       <ul id="second">
+        <li>mango</li>
+        <li>grape</li>
+
+       </ul>
+        <div id ="one">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illo eum nobis voluptates, beatae maiores incidunt? Eligendi, officia inventore aut at est possimus, quis quisquam hic, autem quibusdam error consectetur!</h1>
+        <p id ="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus non nemo delectus tempore dolorem pariatur recusandae commodi, voluptatem quos deleniti laboriosam culpa reprehenderit nihil necessitatibus velit, odio saepe consequatur.
+        
+        </p>
+
+       </div> 
+
+<script> 
+
+var a=document.querySelector("#first").firstElementChild;
+
+var b=a.cloneNode(true);
+
+var ano=document.querySelector("#second").appendChild(b);
+
+
+
+var one = document.querySelector("#one")
+var para= document.querySelector("#para")
+var b = one.contains(one)
+console.log(b)
+
+
+  
+</script>
+
+</body>
+</html>
